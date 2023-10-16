@@ -6,6 +6,7 @@ import FoodCategory from "./FoodCategory";
 import TopRestaurants from "./TopRestaurants";
 import Collection from "./Collection";
 import ResMenu from "./ResMenu";
+import Footer from "./Footer";
 
 const Home = () => {
   const toggleShowCollection = useSelector(
@@ -24,6 +25,7 @@ const Home = () => {
           <Restaurants />
         </Fragment>
       )}
+      <Footer />
     </div>
   );
 };

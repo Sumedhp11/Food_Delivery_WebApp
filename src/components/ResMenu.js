@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Footer from "./Footer";
 
 import useRestaurantsmenu from "../utils/useRestaurantmenu";
 import RestaurantInfo from "./RestaurantInfo";
@@ -26,6 +27,7 @@ const ResMenu = () => {
           </Fragment>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

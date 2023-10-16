@@ -5,6 +5,7 @@ import EmptyCart from "./EmptyCart";
 import { clearCart } from "../utils/cartSlice";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const CartPage = () => {
   const navigate = useNavigate();
@@ -25,10 +26,11 @@ const CartPage = () => {
       {
         method: "POST",
         body: JSON.stringify({
-          user:{
-          email: user.email,
-          id: user.uid,
-          orderedItems: items,}
+          user: {
+            email: user.email,
+            id: user.uid,
+            orderedItems: items,
+          },
         }),
       }
     );
@@ -130,6 +132,7 @@ const CartPage = () => {
           </div>
         )}
       </div>
+      <Footer />
     </Fragment>
   );
 };

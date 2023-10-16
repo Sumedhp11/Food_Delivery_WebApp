@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -127,6 +128,7 @@ const Login = () => {
             : "Already Registered? Sign In Now"}
         </p>
       </form>
+      <Footer />
     </div>
   );
 };
